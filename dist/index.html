@@ -28,11 +28,15 @@
             <label for="yearInput">Year:</label>
             <input
               type="number"
-              max="2021"
+              max="2023"
               min="1900"
               id="yearInput"
               class="form-control"
             />
+          </div>
+          <div class="form-group">
+            <label for="colorInput">Color:</label>
+            <input type="text" id="colorInput" class="form-control" />
           </div>
           <div class="form-group">
             <button id="submitBtn" class="btn btn-primary">Add</button>
@@ -44,7 +48,7 @@
         <div class="row">
           <div id="wishListContainer" class="col-md-6">
             <h3 id="wishlist-title">Wish List</h3>
-            <ul></ul>
+            <ul class="list-group"></ul>
           </div>
           <div class="col-md-6">
             <div class="card">
@@ -53,7 +57,10 @@
                 <p id="car-make"></p>
                 <p id="car-model"></p>
                 <p id="car-year"></p>
-                <button class="btn btn-warning removeBtn" disabled>Remove</button>
+                <p id="car-color"></p>
+                <button class="btn btn-warning removeBtn" disabled>
+                  Remove
+                </button>
               </div>
             </div>
           </div>
